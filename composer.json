@@ -1,0 +1,32 @@
+{
+    "name": "ghost/dcat-markdown",
+    "alias": "Markdown 编辑器",
+    "description": "bootstrap-markdown 编辑器 支持本地图片拖拽上传",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/Ghost-die/dcat-markdown",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ghost",
+            "email": "wangqun1436@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ghost\\Markdown\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Ghost\\Markdown\\DcatMarkdownServiceProvider",
+        "laravel": {
+            "providers": [
+                "Ghost\\Markdown\\DcatMarkdownServiceProvider"
+            ]
+        }
+    }
+}
