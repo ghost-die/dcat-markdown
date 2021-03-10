@@ -1,4 +1,6 @@
-.extension-demo {
-    font-size: 1.3rem;
-    cursor: pointer;
+.md-editor>textarea{
+    background: none;
+}
+.md-editor .md-footer, .md-editor>.md-header{
+    background: none;
 }
